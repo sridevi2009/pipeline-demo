@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clone-Code') {
+            steps {
+                echo 'Clone the code'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'BUilding the code'
+            }
+        }
+        stage('Unit-Test') {
+            steps {
+                echo 'Testing the code'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Release the code'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy the code'
+            }
+        }
+        stage('Operate') {
+            steps {
+                echo 'Operate the code'
+            }
+        }
+        stage('Monitor') {
+            steps {
+                echo 'Monitor the code'
+            }
+        }
+        stage('plan') {
+            steps {
+                echo 'plan the code'
+            }
+        }
+    }
+}
